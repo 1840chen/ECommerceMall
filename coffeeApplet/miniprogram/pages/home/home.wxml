@@ -1,0 +1,23 @@
+<!--pages/home/home.wxml-->
+<swiper indicator-dots autoplay>
+  <swiper-item wx:for="{{banner}}" wx:key="id">
+    <image src="{{item}}"></image>
+  </swiper-item>
+</swiper>
+
+<view class="drink">
+  <van-sidebar active-key="{{ activeKey }}" bind:change="onChange">
+    <van-sidebar-item title="当季限定"/>
+    <van-sidebar-item title="水果茶"/>
+    <van-sidebar-item title="鲜奶茶"/>
+      <van-sidebar-item title="大师咖啡"/>
+  </van-sidebar>
+
+
+  <view class="item">
+    <block wx:for="{{drinks}}" wx:key="_id">
+    <van-card  wx:if="{{item.type==type}}"  tag="{{item.tag}}"  price="{{item.price}}"  desc="{{item.desc}}"  title="{{item.title}}"  thumb="{{item.picUrl}}" thumb-link="../detail/detail?id={{item._id}}">
+    </van-card>
+    </block>
+  </view>
+</view>

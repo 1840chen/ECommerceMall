@@ -1,0 +1,31 @@
+/* pages/cart/cart.wxss */
+.van-swipe-cell__left,
+.van-swipe-cell__right{
+  display: inline-block;
+  width: 150rpx;
+  height: 134px;
+  font-size: 15px;
+  line-height: 134rpx;
+  color: #fff;
+  text-align: center;
+  writing-mode: vertical-lr;
+  background-color: #f44;
+}
+
+#product-list{
+  margin-bottom: 100rpx;
+}
+
+.bar{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(250,250,250);
+  padding-left: 20rpx;
+  margin-bottom: 10rpx;
+}
+
+van-card{
+  flex-grow: 1;
+}

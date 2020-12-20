@@ -1,0 +1,36 @@
+{
+  "pages":[
+    "pages/home/home",
+    "pages/cart/cart",
+    "pages/order/order",
+    "pages/detail/detail",
+    "pages/my/my"
+  ],
+  "window":{
+    "navigationBarBackgroundColor": "#13227a",
+    "navigationBarTitleText": "咖啡奶茶点单"
+  },
+  "tabBar":{
+    "color":"#000000",
+    "selectedColor":"#13227a",
+    "list":[{
+      "pagePath":"pages/home/home",
+      "text":"首页",
+      "iconPath":"images/tabBar/home.png",
+      "selectedIconPath":"images/tabBar/home_blue.png"
+    },
+    {
+      "pagePath":"pages/cart/cart",
+      "text":"购物车",
+      "iconPath":"images/tabBar/cart.png",
+      "selectedIconPath":"images/tabBar/cart_blue.png"
+    },
+    {
+      "pagePath": "pages/my/my",
+      "text": "我的",
+      "iconPath": "images/tabBar/my.png",
+      "selectedIconPath": "images/tabBar/my_blue.png"
+    }]
+  },
+  "sitemapLocation":"sitemap.json"
+}

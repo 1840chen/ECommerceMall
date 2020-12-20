@@ -1,0 +1,25 @@
+<view class="login-panel">
+  <image src="{{myInfo.avatarUrl}}"></image>
+  <view wx:if="{{isLogin}}">{{myInfo.nickName}}(余额：￥{{myInfo.balance}})</view>
+  <button wx:else open-type="getUserInfo" bindgetuserinfo="login">未登录，点此登录</button>
+</view>
+
+<view class="list-panel">
+  <view class="list-item" bindtap="goToOrder">
+    <image src="/images/my/order.png"></image>
+    <text>我的订单</text>
+    <image src="/images/my/arrow.png"></image>
+  </view>
+
+  <view class="list-item">
+    <image src="/images/my/order.png"></image>
+    <text>使用帮助</text>
+    <image src="/images/my/arrow.png"></image>
+  </view>
+
+  <view class="list-item">
+    <image src="/images/my/order.png"></image>
+    <text>关于我们</text>
+    <image src="/images/my/arrow.png"></image>
+  </view>
+</view>

@@ -1,0 +1,15 @@
+/* pages/order/order.wxss */
+.order-card{
+  background-color: #fafafa;
+  margin: 20rpx;
+  border-radius: 30rpx;
+  overflow: hidden;
+}
+.order-card.header{
+  border-bottom: 1rpx solid silver;
+  padding: 30rpx;
+}
+.order-card.footer{
+  border-top: 1rpx solid silver;
+  padding: 30rpx;
+}

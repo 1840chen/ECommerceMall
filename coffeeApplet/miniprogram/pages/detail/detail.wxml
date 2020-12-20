@@ -1,0 +1,23 @@
+<!--商品图片-->
+<image class="poster" src="{{product.picUrl}}"></image>
+
+<!--商品详情-->
+<van-cell-group>
+  <van-cell title="饮品名称" value="{{product.title}}" />
+  <van-cell title="饮品种类" value="{{product.tag}}" />
+  <van-cell title="饮品价格" value="{{product.price}}" border="{{false}}" />
+</van-cell-group>
+
+<!--商品导航-->
+<van-goods-action>
+  <van-goods-action-icon icon="shop=o" text="店铺" bind:click="goToHome" />
+  <van-goods-action-icon icon="cart=o" text="购物车" bind:click="goToCart" />
+  <van-goods-action-button 
+    text="加入购物车"
+    type="warning"
+    bind:click="addToCart"
+  />
+  <van-goods-action-button text="立即购买" bind:click="onClickButton" />
+</van-goods-action>
+
+<van-toast id="van-toast" />

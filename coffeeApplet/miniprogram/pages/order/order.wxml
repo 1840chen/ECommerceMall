@@ -1,0 +1,9 @@
+<!--pages/order/order.wxml-->
+<view class = "order-card" wx:for="{{order}}" wx:key="_id">
+  <view class="header">订单时间：{{item.date}}{{item.time}}</view>
+  <block wx:for="{{item.drinks}}" wx:for-item="drink" wx:key="product_id">
+    <van-card  num="{{drink.count}}"  price="{{drink.price}}"  desc="{{drink.desc}}"  title="{{drink.title}}" thumb="{{drink.picUrl}}" thumb-link="../detail/detail?id={{drink._id}}" />
+
+  </block>
+  <view class="footer">合计金额：￥{{item.price}}</view>
+</view>
